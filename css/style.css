@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto.woff2') format('woff2'), url('../fonts/Roboto.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Robotomedium.woff2') format('woff2'), url('../fonts/Robotomedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Robotobold.woff2') format('woff2'), url('../fonts/Robotobold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black'), local('Roboto-Black'), url('../fonts/Robotoblack.woff2') format('woff2'), url('../fonts/Robotoblack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1195px;
+    padding: 0 0 0 20px;
+    margin: 0 auto;
+}
+
+.callback {
+    display: block;
+    padding: 12px 42px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #f53f4f;
+    border: 1px solid #f53f4f;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.callback:focus {
+    outline: none;
+}
+
+.callback:hover {
+    color: #fff;
+    background-color: #f53f4f;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pop-up {
+    display: block;
+    align-self: flex-start;
+    padding: 19px 72px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #ff4e2e;
+    background-color: #ff4e2e;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.pop-up:focus {
+    outline: none;
+}
+
+.pop-up:hover {
+    background-color: #f72c67;
+    transition: background-color 0.5s;
+}
+
+.callback-form {
+    display: none;
+}
+
+.callback-form__bacground {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000e3;
+    width: 100%;
+    min-height: 100%;
+}
+
+.callback-form__form {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    width: 500px;
+    max-height: 100%;
+    height: 400px;
+    margin: 5% auto;
+    padding: 40px 20px;
+    transform: translate(-50%, -80%);
+    background-color: #fbfbfb;
+}
+
+.callback-form__prop {
+    text-align: center;
+    color: #262626;
+    font-size: 26px;
+}
+
+.callback-form__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.callback-form__name--text {
+    width: 75%;
+    height: 50px;
+    padding: 2%;
+    margin-top: 10px;
+}
+
+.callback-form__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.callback-form__phone--phone {
+    width: 75%;
+    height: 50px;
+    padding: 2%;
+    margin-top: 10px;
+}
+
+.callback-form__email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.callback-form__email--email {
+    width: 75%;
+    height: 50px;
+    padding: 2%;
+    margin-top: 10px;
+}
+
+.callback-form__button {
+    align-self: center;
+}
+
+.callback-form__form--pop-up {
+    max-height: 100%;
+    height: 560px;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+.btn-up {
+    display: inline-block;
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/up-arrow.png");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 70% 70%;
+    background-position: center;
+    border: 1px solid #f44639;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.btn-up.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-up:focus {
+    outline: none;
+}
