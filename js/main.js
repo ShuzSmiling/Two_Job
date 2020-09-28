@@ -44,7 +44,7 @@ $('.header__nav-close').on('click', function(event) {
 });
 if ($(window).width() <= '1024') {
     $('.header__link').on('click', function(event) {
-        $('.header__header-nav').hide('active');
+        $('.header__header-nav').hide();
     });
 
 }
