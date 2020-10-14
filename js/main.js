@@ -3,11 +3,9 @@ $('.callback').on('click', function() {
     let callback_id = $('#' + $(this).attr('rel'));
     $(callback_id).show();
     $('.callback-form__bacground').show();
-    $('body').css('overflow', 'hidden');
 });
 $('.callback-form__bacground').on('click', function() {
     $('.callback-form').hide();
-    $('body').css('overflow', '')
 });
 
 //Плавный скролл
@@ -25,11 +23,9 @@ $('.pop-up').on('click', function() {
     let callback_id = $('#' + $(this).attr('rel'));
     $(callback_id).show();
     $('.callback-form__bacground').show();
-    $('body').css('overflow', 'hidden');
 });
 $('.callback-form__bacground').on('click', function() {
     $('.callback-form').hide();
-    $('body').css('overflow', '')
 });
 
 //Маска ввода
@@ -42,7 +38,7 @@ $('.header__nav-burger').on('click', function(event) {
 $('.header__nav-close').on('click', function(event) {
     $('.header__header-nav').hide('active');
 });
-if ($(window).width() <= '1024') {
+if ($(window).width() <= 1024) {
     $('.header__link').on('click', function(event) {
         $('.header__header-nav').hide();
     });
