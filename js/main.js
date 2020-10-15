@@ -1,10 +1,9 @@
 //Заказать звонок
 $('.callback').on('click', function() {
     let callback_id = $('#' + $(this).attr('rel'));
-    $(callback_id).show();
-    $('.callback-form__bacground').show();
+    $(callback_id).css('display', 'flex')
 });
-$('.callback-form__bacground').on('click', function() {
+$('.callback-form__close').on('click', function() {
     $('.callback-form').hide();
 });
 
@@ -21,10 +20,9 @@ $(document).ready(function(){
 //Узнать больше
 $('.pop-up').on('click', function() {
     let callback_id = $('#' + $(this).attr('rel'));
-    $(callback_id).show();
-    $('.callback-form__bacground').show();
+    $(callback_id).css('display', 'flex')
 });
-$('.callback-form__bacground').on('click', function() {
+$('.callback-form__close').on('click', function() {
     $('.callback-form').hide();
 });
 
