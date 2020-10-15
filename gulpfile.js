@@ -47,7 +47,7 @@ gulp.task('script', function(){
 gulp.task('js', function(){
   return gulp.src([
     'node_modules/swiper/swiper-bundle.min.js',
-    'node_modules/inputmask/dist/inputmask.js'
+    'node_modules/inputmask/dist/jquery.inputmask.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -76,7 +76,7 @@ gulp.task('export', function(){
   let buildFonts = gulp.src('app/fonts/**/*.*')
     .pipe(gulp.dest('dist/fonts'));
 
-  let buildImg = gulp.src('app/img/**/*.css')
+  let buildImg = gulp.src('app/img/**/*.*')
     .pipe(gulp.dest('dist/img'));
 })
 
