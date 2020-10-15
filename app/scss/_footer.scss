@@ -19,13 +19,11 @@
     font-size: 18px;
     font-weight: 400;
     transition: color 0.5s;
+    &:hover {
+        color: #f3555f;
+        transition: color 0.5s;
+    }
 }
-
-.footer__link-left:hover {
-    color: #f3555f;
-    transition: color 0.5s;
-}
-
 /* Правая колонка */
 
 .footer__colum-center {
@@ -41,11 +39,10 @@
     font-weight: 400;
     text-decoration: none;
     transition: color 0.5s;
-}
-
-.footer__link-center:hover {
-    color: #f72c66;
-    transition: color 0.5s;
+    &:hover {
+        color: #f72c66;
+        transition: color 0.5s;
+    }
 }
 
 .footer__phone {
@@ -75,11 +72,10 @@
     padding: 6px;
     border-radius: 9px;
     transition: background-color 0.2s;
-}
-
-.footer__item-right:hover {
-    background-color: #f500002e;   
-    transition: background-color 0.2s;
+    &:hover {
+        background-color: #f500002e;   
+        transition: background-color 0.2s;
+    }
 }
 
 .footer__link-right {
@@ -120,40 +116,3 @@
     font-weight: 400;
 }
 
-@media (max-width: 598px) {
-    .footer__container {
-        display: block;
-    }
-}
-
-@media (max-width: 454px) {
-    .footer__list-left {
-        margin-bottom: 46px;
-        width: 100%;
-    }
-    .footer__colum-center {
-        width: 100%;
-    }
-    .footer__column-right {
-        width: 100%;
-    }
-    .footer__callback {
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 390px) {
-    .footer__link-left {
-        font-size: 15px;
-    }
-    .footer__phone {
-        color: #8993ad;
-        font-size: 20px;
-        font-weight: 500;
-    }
-    .footer__mail {
-        color: #8993ad;
-        font-size: 20px;
-        font-weight: 500;
-    }
-}
