@@ -65,6 +65,7 @@ $(function() {
       // Optional parameters
       loop: true,
       slidesPerView: 3,
+      spaceBetween: 40,
       breakpoints: {
         320: {
           slidesPerView: 1,
@@ -77,7 +78,7 @@ $(function() {
         },
         1025: {
           slidesPerView: 3,
-          spaceBetween: 20,
+          spaceBetween: 50,
         },
 
       },
