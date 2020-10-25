@@ -1,6 +1,5 @@
 @import "libs.scss";
 @import "fonts";
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -59,8 +58,7 @@ img {
   &:hover {
     background-color: #f72c67;
     transition: background-color 0.5s;
-  }  
-
+  }
 }
 
 .callback-form {
@@ -74,9 +72,7 @@ img {
   top: 0;
   left: 0;
   background-color: #000000e3;
-  
 }
-
 
 .callback-form__form {
   display: flex;
@@ -152,7 +148,7 @@ img {
   right: 0;
   width: 30px;
   height: 30px;
-  background-image: url('../img/close-btn.png');
+  background-image: url('../img/icon/close-btn.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -170,8 +166,6 @@ img {
   height: 560px;
 }
 
-
-
 .btn-up {
   display: inline-block;
   position: fixed;
@@ -179,7 +173,7 @@ img {
   bottom: 45px;
   width: 35px;
   height: 35px;
-  background-image: url("../img/up-arrow.png");
+  background-image: url("../img/icon/up-arrow.png");
   background-repeat: no-repeat;
   background-color: #fff;
   background-size: 70% 70%;
@@ -191,9 +185,9 @@ img {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-    &:focus {
-      outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn-up.show {
@@ -205,4 +199,3 @@ img {
 @import "main";
 @import "footer";
 @import "media";
-

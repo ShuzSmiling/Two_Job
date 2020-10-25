@@ -2,7 +2,7 @@
     position: relative;
     padding: 35px 0 0 0;
     background-color: #fbfbfb;
-    background-image: url("../img/Ellipse_1.svg");
+    background-image: url("../img/desktop/Ellipse_1.svg");
     background-repeat: no-repeat;
     background-position: 120% 100%;
   }
@@ -34,8 +34,6 @@
   
   .about__image {
     display: block;
-    width: 433px;
-    height: 637px;
   }
   /* Что я делаю */
   
@@ -74,20 +72,20 @@
   }
   
   .offers__item--one-block {
-    background-image: url("../img/tools-and-utensils.png");
+    background-image: url("../img/icon/tools-and-utensils.png");
     margin-left: 0;
   }
   
   .offers__item--two-block {
-    background-image: url("../img/responsive.png");
+    background-image: url("../img/icon/responsive.png");
   }
   
   .offers__item--tree-block {
-    background-image: url("../img/programming.png");
+    background-image: url("../img/icon/programming.png");
   }
   
   .offers__item--four-block {
-    background-image: url("../img/coding.png");
+    background-image: url("../img/icon/coding.png");
   }
   
   .offers__icon {

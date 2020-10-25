@@ -5,6 +5,7 @@
   }
 }
 
+// Шапка
 @media (max-width: 1024px) {
   .header__header-nav {
     display: none;
@@ -41,7 +42,7 @@
     padding: 7%;
     border: none;
     background-color: inherit;
-    background-image: url("../img/call.png");
+    background-image: url("../img/icon/call.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -87,6 +88,7 @@
   }
 }
 
+// Тело
 @media (max-width: 1300px) {
   .about {
     background-position: 150% 100%;
@@ -242,7 +244,7 @@
 
 @media (max-width: 1024px) {
   .about {
-    background-position: 230% 100%;
+    background-image: url("../img/tablet/Ellipse_1-1024.svg");
   }
   .about__caption {
     &::before {
@@ -457,6 +459,7 @@
   }
 }
 
+// Футер
 @media (max-width: 598px) {
   .footer__container {
     display: block;
