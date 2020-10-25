@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дмитрий Алексеев, Frontend-разработчик и веб-верстальщик</title>
+  <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+
+  <!-- Скрипты -->
+  <script src="js/jquery-3.5.1.min.js" defer></script>
+  <script src="js/libs.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- Шрифт -->
+  <link rel="preload" href="fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Robotoblack.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- стили -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <button class="header__nav-burger"></button>
+      <nav class="header__header-nav">
+        <button class="header__nav-close"></button>
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#services" aria-label="services">Услуги</a></li>
+          <li class="header__item"><a class="header__link" href="#portfolio" aria-label="portfolio">Портфолио</a></li>
+          <li class="header__item"><a class="header__link" href="#cost" aria-label="cost">Стоимость</a></li>
+        </ul>
+      </nav>
+      <div class="header__connect">
+        <a href="tel:+74999955577" class="header__phone" aria-label="number-phone">+7 (499) 995-55-77</a>
+        <button class="header__callback callback" rel="callback-phone" aria-label="callback-phone">Заказать звонок</button>
+        <button class="header__callback-mobile callback" rel="callback-phone" aria-label="callback-close"></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="about">
+      <div class="about__container">
+        <div class="about__left">
+          <h1 class="about__caption">
+            Дмитрий Алексеев <br>
+            <span class="about__small-text">Frontend-разработчик и веб-верстальщик</span>
+          </h1>
+          <button class="about__pop-up pop-up" rel="pop-phone" aria-label="learn-more">Узнать больше </button>
+        </div>
+        <div class="about__right">
+          <picture>
+            <source media="(min-width: 1600px)" type="image/webp" srcset="img/desktop/man1.webp 1x, img/desktop/man1.webp 2x">
+            <source media="(min-width: 589px)" type="image/webp" srcset="img/tablet/man1_1024.webp 1x, img/tablet/man1_1024.webp 2x">
+            <source type="image/webp" srcset="img/phone/man1_320.webp 1x, img/phone/man1_320.webp 2x">
+            <source media="(max-width: 1024px)" srcset="img/desktop/man1.png 1x, img/desktop/man1.png 2x">
+            <source media="(max-width: 768px)" srcset="img/tablet/man1_1024.png 1x, img/tablet/man1_1024.png 2x">
+            <img class="about__image" src="img/phone/man1_320.png" srcset="img/phone/man1_320.png 2x" alt="image">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="offers" id="services">
+      <div class="container">
+        <h2 class="offers__caption">Что я делаю</h2>
+        <ul class="offers__list">
+          <li class="offers__item offers__item--one-block">Вёрстка лендинг–страниц и сайтов любой сложности></li>
+          <li class="offers__item offers__item--two-block">Адаптивная вёрстка под все браузеры и устройства</li>
+          <li class="offers__item offers__item--tree-block">Frontend–разработка и программирование</li>
+          <li class="offers__item offers__item--four-block">Исправление и доработка существующей вёрстки</li>
+        </ul>
+        <button class="offers__pop-up pop-up" rel="pop-phone" aria-label="learn-more">Узнать стоимость</button>
+      </div>
+    </section>
+    <section class="examples" id="portfolio">
+      <h2 class="examles__caption">Примеры моих работ</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a class="examples__links" href="#" aria-label="work">
+              <picture>
+                <source media="(min-width: 1600px)" type="image/webp" srcset="img/desktop/Layer_2.webp 1x, img/desktop/Layer_2.webp 2x">
+                <source media="(min-width: 589px)" type="image/webp" srcset="img/tablet/Layer_2-1024.webp 1x, img/tablet/Layer_2-1024.webp 2x">
+                <source type="image/webp" srcset="img/phone/Layer_1-320.webp 1x, img/phone/Layer_1-320.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/desktop/Layer_2.jpg 1x, img/desktop/Layer_2.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/tablet/Layer_2-1024.jpg 1x, img/tablet/Layer_2-1024.jpg 2x">
+                <img src="img/phone/Layer_1-320.jpg" srcset="img/phone/Layer_1-320.jpg 2x" alt="Сайт психолога Веры Антоновой" title="Сайт психолога Веры Антоновой">
+              </picture>
+              <h3>Сайт психолога Веры Антоновой</h3>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="examples__links" href="#" aria-label="work">
+              <picture>
+                <source media="(min-width: 1600px)" type="image/webp" srcset="img/desktop/Layer_1.webp 1x, img/desktop/Layer_1.webp 2x">
+                <source media="(min-width: 589px)" type="image/webp" srcset="img/tablet/Layer_1_1024.webp 1x, img/tablet/Layer_1_1024.webp 2x">
+                <source type="image/webp" srcset="img/phone/Layer_2-320.webp 1x, img/phone/Layer_2-320.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/desktop/Layer_1.jpg 1x, img/desktop/Layer_1.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/tablet/Layer_1_1024.jpg 1x, img/tablet/Layer_1_1024.jpg 2x">
+                <img src="img/phone/Layer_2-320.jpg" srcset="img/phone/Layer_2-320.jpg 2x" alt="Сайт магазина детской одежды" title="Сайт магазина детской одежды">
+              </picture>
+              <h3>Сайт магазина детской одежды</h3>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="examples__links" href="#" aria-label="work">
+              <picture>
+                <source media="(min-width: 1600px)" type="image/webp" srcset="img/desktop/Layer_3.webp 1x, img/desktop/Layer_3.webp 2x">
+                <source media="(min-width: 589px)" type="image/webp" srcset="img/tablet/Layer_3-1024.webp 1x, img/tablet/Layer_3-1024.webp 2x">
+                <source type="image/webp" srcset="img/phone/Layer_3-320.webp 1x, img/phone/Layer_3-320.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/desktop/Layer_3.jpg 1x, img/desktop/Layer_3.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/tablet/Layer_3-1024.jpg 1x, img/tablet/Layer_3-1024.jpg 2x">
+                <img src="img/phone/Layer_3-320.jpg" srcset="img/phone/Layer_3-320.jpg 2x" alt="Сайт магазина «Рыболов»" title="Сайт магазина «Рыболов»">
+              </picture>
+              <h3>Сайт магазина «Рыболов»</h3>
+            </a>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- nav -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <button class="examples__pop-up pop-up" rel="pop-phone" aria-label="learn-more">
+				Узнать стоимость
+			</button>
+    </section>
+    <section class="price" id="cost">
+      <div class="price__container container">
+        <h2 class="price__caption">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</h2>
+        <p class="price__text">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <ul class="footer__list-left">
+        <li class="footer__item-left"><a class="footer__link-left" href="#services" aria-label="services">Услуги</a></li>
+        <li class="footer__item-left"><a class="footer__link-left" href="#portfolio" aria-label="portfolio">Портфолио</a></li>
+        <li class="footer__item-left"><a class="footer__link-left" href="#cost" aria-label="cost">Стоимость</a></li>
+      </ul>
+      <div class="footer__colum-center">
+        <a href="tel:+74999957755" class="footer__phone footer__link-center" aria-label="phone-number"><i class="fas fa-phone-alt"></i>+7 (499) 999-99-99</a>
+        <a href="mailto:dmitry@alekseev.com" class="footer__mail footer__link-center" aria-label="mail"><i class="fas fa-envelope"></i>test@test.ru</a>
+      </div>
+      <div class="footer__column-right">
+        <button class="footer__callback callback" rel="callback-phone" aria-label="callback-phone">Заказать звонок</button>
+        <ul class="footer__list-right">
+          <li class="footer__item-right">
+            <a class="footer__link-right vk" href="#" aria-label="write-vk.com"></a>
+          </li>
+          <li class="footer__item-right">
+            <a class="footer__link-right facebook" href="#" aria-label="write-facebook"></a>
+          </li>
+          <li class="footer__item-right">
+            <a class="footer__link-right twit" href="#" aria-label="write-twitter"></a>
+          </li>
+          <li class="footer__item-right">
+            <a class="footer__link-right inst" href="#" aria-label="write-instagram"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <small class="footer__copy">
+                &copy;Shuz Smiling, 2016 – 2018
+        </small>
+  </footer>
+
+  <button class="btn-up" aria-label="to the top of the site"></button>
+
+
+  <div class="callback-form" id="callback-phone">
+    <form action="" method="GET" class="callback-form__form">
+      <h5 class="callback-form__prop">Заказать звонок</h5>
+      <label class="callback-form__name">
+                * Ваше имя
+                <input type="text" class="callback-form__name--text" name="name" placeholder="Введите имя" required>
+            </label>
+      <label class="callback-form__phone">
+                * Ваш телефон
+                <input type="tel" class="callback-form__phone--phone" name="phone" value="+7(___)___-__-__" placeholder="Введите телефон" required>
+            </label>
+      <button class="callback-form__button callback" aria-label="request-a-call">Заказать звонок</button>
+      <button class="callback-form__close" type="button" aria-label="close-form"></button>
+    </form>
+  </div>
+
+  <div class="callback-form" id="pop-phone">
+    <div class="callback-form__bacground"></div>
+    <form action="" method="GET" class="callback-form__form callback-form__form--pop-up">
+      <h5 class="callback-form__prop">Узнать стоимость</h5>
+      <label class="callback-form__name callback-form__name">
+                * Ваше имя
+                <input type="text" class="callback-form__name--text" name="name" placeholder="Введите имя" required>
+            </label>
+      <label class="callback-form__email">
+                * Ваша почта
+                <input type="email" class="callback-form__email--email" name="email" placeholder="Ваша почта" required>
+            </label>
+      <label class="callback-form__phone callback-form__phone--pop-up">
+                * Ваш телефон
+                <input type="tel" class="callback-form__phone--phone" name="phone" value="+7(___)___-__-__" placeholder="Введите телефон" required>
+            </label>
+      <button class="callback-form__button callback" aria-label="request-a-call">Оставить заявку</button>
+      <button class="callback-form__close" type="button" aria-label="close-form"></button>
+    </form>
+  </div>
+
+</body>
+
+</html>
